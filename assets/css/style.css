@@ -1,0 +1,35 @@
+body {
+	background-image: url("../images/blue-abstract.jpg");
+	background-color: #eee;
+}
+
+
+#container {
+	background-color: #eee;
+	height: 400px;
+	margin: 20px;
+}
+
+#heading {
+	height: 80px;
+	padding: 5px;
+	margin-left: 10px;
+
+}
+
+li {
+	display: inline-block;
+	text-decoration: none;
+}
+
+img {
+	width: 100px;
+	height: 50px;
+	float: left;
+}
+
+/*#crystals {
+	background-color: #eee;
+	width: 100%;
+
+}*/
