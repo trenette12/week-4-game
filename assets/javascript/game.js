@@ -11,8 +11,9 @@ function reset() {
 }
 
 $("#crystals").on("click", function (){
-	$("#random-number").html(randomNumber);
+	$("#random-number").html("Random Number: " + randomNumber);
 	userTotalScore = userTotalScore + crystalPoints;
+	$("#score-number").html(" " + userTotalScore);
 	initGame();
 })
 
