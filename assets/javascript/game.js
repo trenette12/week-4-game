@@ -10,8 +10,11 @@ function reset() {
 	userTotalScore = 0;
 }
 
+$( document ).ready(function() {
+	start();
+});
+
 $("#crystals").on("click", function (){
-	$("#random-number").html("Random Number: " + randomNumber);
 	userTotalScore = userTotalScore + crystalPoints;
 	$("#score-number").html(" " + userTotalScore);
 	initGame();
@@ -19,6 +22,7 @@ $("#crystals").on("click", function (){
 
 
 function initGame() {
+	$("#random-number").html("Random Number: " + randomNumber);
 	if (userTotalScore === randomNumber) {
 		$("#wins").append(" " + wins++);
 		reset();
@@ -27,5 +31,10 @@ function initGame() {
 		reset();
 	}
 }
+
+function start() {
+	initGame();
+}
+
 
 console.log(randomNumber);
